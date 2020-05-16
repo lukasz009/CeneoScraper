@@ -48,6 +48,5 @@ plt.close()
 
 
 opinions['purschased'] = opinions.purchase_date != None 
-print(opinions['purchased'])
 stars_purchased = pd.crosstab(opinions['stars'], opinions['purchased'])
 print(stars_purchased)

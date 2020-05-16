@@ -37,12 +37,11 @@ plt.savefig("figures_png/"+product_id+"_bar.png")
 plt.close()
 
 #udział poszczególnych rekomendacji w ogólnej liczbie opinii
-recommendation = options.recommendation.value_counts()
+recommendation = opinions.recommendation.value_counts()
 fig, ax =  plt.subplots()
-recommendation.plot.pie(label="", autopct="X1.1f%%", colors=['#f5c3c2', '#89cff0'])
+recommendation.plot.pie(label="", autopct="%1.1f%%", colors=['#f5c3c2', '#89cff0'])
 plt.title("<<<<<Rekomendacje>>>>>")
-#plt.show()
-plt.savefig("figures_png/"+product_id+"_pie.png")
+plt.show()
 plt.close()
 
 
